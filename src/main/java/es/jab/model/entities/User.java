@@ -2,6 +2,10 @@ package es.jab.model.entities;
 
 public abstract class User {
 	
+	private static int idCounter = 0;
+	
+	private int id;
+	
 	private String name;
 	
 	private String password;
@@ -9,6 +13,15 @@ public abstract class User {
 	public User(String name, String password){
 		this.setName(name);
 		this.setPassword(password);
+		this.id = User.idCounter++;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
 	}
 
 	public String getName() {
