@@ -5,14 +5,9 @@ public abstract class DAOFactory {
 	protected static DAOFactory daoFactory = null;
 
 
-    private DAOFactory (){
+    public DAOFactory (){
     }
-
-
-	public static DAOFactory getDaoFactory() {
-		return daoFactory;
-	}
-	
+    
 	public abstract PlayerDAO getPlayerDAO();
 	
 	public abstract RoundDAO getRoundDAO();
