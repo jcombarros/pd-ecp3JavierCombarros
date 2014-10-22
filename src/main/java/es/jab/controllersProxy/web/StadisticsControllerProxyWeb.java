@@ -1,5 +1,7 @@
 package es.jab.controllersProxy.web;
 
-public class StadisticsControllerProxyWeb {
+import es.jab.controllers.StadisticsController;
+
+public class StadisticsControllerProxyWeb implements StadisticsController {
 
 }
